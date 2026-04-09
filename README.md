@@ -58,7 +58,7 @@ A complete Laravel-based web application to manage water delivery, orders, retur
 
 - Laravel (PHP Framework)
 - MySQL Database
-- HTML, CSS, JavaScript
+- HTML, CSS, Bootstrap, JavaScript
 - Livewire (for dynamic UI)
 
 ---
