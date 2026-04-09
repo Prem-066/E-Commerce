@@ -28,7 +28,8 @@ A complete Laravel-based web application to manage water delivery, orders, retur
 
 ## 📸 Screenshots
 
-(Add your project screenshots here)
+<img width="1429" height="768" alt="image" src="https://github.com/user-attachments/assets/6d40551c-5d34-412d-8ae5-0aa04575056d" />
+
 
 ---
 
