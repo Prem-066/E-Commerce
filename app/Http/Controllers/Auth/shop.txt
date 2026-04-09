@@ -1,0 +1,66 @@
+ public function shop(Request $request)
+ {
+     $categories = Category::with(['subcategories'])
+         ->withCount('products')
+         ->where('is_active', 1)
+         ->get();
+
+
+     $brands = Brand::where('is_active', 1)->get();
+
+     $deals = Product::where('is_active', true)
+         ->orderBy('price', 'asc')
+         ->take(20)
+         ->get();
+
+     if ($deals->count() > 0) {
+         $deals = $deals->random(min(9, $deals->count()));
+     }
+
+     $query = Product::where('is_active', 1);
+
+     if ($request->has('category')) {
+         $query->where('category_id', $request->category);
+     }
+
+     if ($request->has('subcategory')) {
+         $query->where('subcategory_id', $request->subcategory);
+     }
+     if ($request->has('brands')) {
+         $query->whereIn('brand_id', $request->brands);
+     }
+
+     $perPage = $request->get('per_page', 9);
+     $products = $query->paginate($perPage)->appends($request->all());
+
+     return view('fronend.pages.shop', compact('products', 'categories', 'brands', 'deals'));
+ }
+
+  public function index()
+    {
+        $products = Product::latest()->take(8)->get();
+        $bannerProducts = Product::inRandomOrder()->take(3)->get();
+        $exclusiveProducts = Product::where('is_active', true)->inRandomOrder()->take(2)->get();
+        $brands = Brand::where('is_active', true)->get();
+        $categories = Category::where('is_active', true)
+            ->with(['products' => function ($query) {
+                $query->inRandomOrder();
+            }])
+            ->take(5)
+            ->get();
+        $deals = Product::where('is_active', true)->latest()->take(9)->get();
+        return view('fronend.pages.hero-home', compact('products', 'bannerProducts', 'exclusiveProducts', 'brands', 'categories', 'deals'));
+    }
+
+     public function productDetail($slug)
+    {
+        $productDetail = Product::where('slug', $slug)->firstOrFail();
+        $productImg = ProductImage::where('product_id', $productDetail->id)->get();
+
+
+        $relatedProducts = Product::where('category_id', $productDetail->category_id)
+            ->where('id', '!=', $productDetail->id)
+            ->limit(9)
+            ->get();
+        return view('fronend.pages.product-detail', compact('productDetail', 'productImg', 'relatedProducts'));
+    }
