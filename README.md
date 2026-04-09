@@ -1,20 +1,57 @@
-# 💧 Mineral Water Management System
+# 🛒 Multi-Store Water Delivery & eCommerce Management System
+
+This project is designed to handle real-world business scenarios like multi-store operations, staff hierarchy, and location-based eCommerce delivery.
+
+A full-featured Laravel-based multi-store eCommerce and water delivery management system.  
+This application allows a Super Admin to manage multiple stores, assign roles, and control store-based operations including orders, staff, inventory, and online shopping.
+
+Each store operates independently with its own products, staff, and customers. The platform also supports location-based product visibility using Nominatim API.
 
 A complete Laravel-based web application to manage water delivery, orders, returns, and customer tracking.
 
 ---
 
+## 🏢 System Architecture
+
+- 👑 **Super Admin**
+  - Manages multiple stores
+  - Assigns roles & permissions
+  - Full system control
+
+- 🏬 **Store Admin**
+  - Manages a specific store
+  - Controls staff & managers
+  - Handles inventory and orders
+
+- 👨‍💼 **Manager**
+  - Assigned by Super Admin
+  - Manages daily store operations
+
+- 👷 **Staff**
+  - Handles delivery, returns, and POS operations
+
+---
+
+## 🛍️ eCommerce Features
+
+- 🛒 Store-based online shopping system
+- 📍 Location-based product visibility (Nominatim API)
+- 🏬 Separate product listings per store (e.g., Palanpur store shows Palanpur products only)
+- 💳 POS (Point of Sale) system for offline sales
+- 🔄 Order & Return Management
+
 ## 🚀 Features
 
-- 🧾 Order Management (Bottle & Jar)
-- 🔄 Return Management (Track empty bottles/jars)
-- 👥 Customer Management
-- 👨‍💼 Staff & Subscriber Roles
-- 📊 Real-time Dashboard
-- 📦 Stock Management System
-- 💰 Rate Management based on water type
-- 📅 Booking System with multiple delivery dates
-
+- 🏢 Multi-Store Management System
+- 👑 Role-Based Access Control (Super Admin, Admin, Manager, Staff)
+- 🛒 eCommerce Store (Online Shopping)
+- 📍 Location-Based Product Filtering (Nominatim API)
+- 📦 Inventory & Stock Management
+- 🧾 Order & Return Tracking System
+- 💻 POS System for Store Sales
+- 👥 Staff & Manager Management
+- 📊 Real-time Dashboard & Analytics
+  
 ---
 
 ## 🛠️ Technologies Used
@@ -43,6 +80,19 @@ A complete Laravel-based web application to manage water delivery, orders, retur
 <img width="560" height="645" alt="image" src="https://github.com/user-attachments/assets/76971267-4311-440d-9efc-762465e379bc" />
 <img width="1419" height="767" alt="image" src="https://github.com/user-attachments/assets/e6a26356-efa8-4de8-9e8b-fa1d388a8c08" />
 
+<img width="1425" height="769" alt="image" src="https://github.com/user-attachments/assets/d4270cb4-e5c4-4bca-b99d-a1294b6f0810" />
+<img width="1423" height="765" alt="image" src="https://github.com/user-attachments/assets/828fec24-9d37-46a7-9c5f-587d6022dc13" />
+<img width="1440" height="770" alt="image" src="https://github.com/user-attachments/assets/ad42a7dd-17fe-460b-b8ea-7142423fbb51" />
+<img width="1440" height="767" alt="image" src="https://github.com/user-attachments/assets/9d447671-155d-4cd9-94d1-1d2de68d3bf0" />
+<img width="1438" height="765" alt="image" src="https://github.com/user-attachments/assets/82ed8103-19d2-43ad-8863-2d74104307df" />
+<img width="1440" height="777" alt="image" src="https://github.com/user-attachments/assets/af667dc5-cc73-4ba4-993a-c0a977521a26" />
+<img width="1440" height="767" alt="image" src="https://github.com/user-attachments/assets/97e62969-83f2-4320-a856-039a06a20ed2" />
+<img width="1426" height="774" alt="image" src="https://github.com/user-attachments/assets/1d9a79b6-966b-4a19-9428-5a4aa0631daa" />
+<img width="1430" height="770" alt="image" src="https://github.com/user-attachments/assets/8b425dc9-b6b6-445d-840d-77251a98313f" />
+<img width="1440" height="775" alt="image" src="https://github.com/user-attachments/assets/723a2b23-54ca-427e-90ec-4c72e0f6b75c" />
+<img width="1431" height="769" alt="image" src="https://github.com/user-attachments/assets/37888eed-3a84-4e28-bad3-3bc1021273d0" />
+<img width="1276" height="708" alt="image" src="https://github.com/user-attachments/assets/cfb6e0fd-0f00-4277-88e0-c770cbfcb8ec" />
+<img width="1429" height="771" alt="image" src="https://github.com/user-attachments/assets/eeaeb6de-838d-4fb1-a4c8-0015f44992d0" />
 
 ---
 
