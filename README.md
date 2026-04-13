@@ -9,6 +9,7 @@ Password: Prem@2306
 Admin Panel (Store wise): /admin/dashboard
 
 Email: admin@gmail.com
+
 Password: 123456
 
 Store Manager: /store-manager/dashboard
