@@ -1,5 +1,24 @@
 # 🛒 Multi-Store Water Delivery & eCommerce Management System
 
+Super Admin Panel: /superadmin/dashboard
+
+Email: prem81481@gmail.com
+Password: Prem@2306
+
+Admin Panel (Store wise): /admin/dashboard
+
+Email: admin@gmail.com
+Password: 123456
+
+Store Manager: /store-manager/dashboard
+
+Email: managerpln@gmail.com
+Password: 123456
+
+
+Store Staff(employee): /employee/dashboard
+Manager or Admin ( For Specific Store) can create employee.
+
 This project is designed to handle real-world business scenarios like multi-store operations, staff hierarchy, and location-based eCommerce delivery.
 
 A full-featured Laravel-based multi-store eCommerce and water delivery management system.  
